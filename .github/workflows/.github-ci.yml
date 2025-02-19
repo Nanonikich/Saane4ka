@@ -1,0 +1,29 @@
+name: Saane4ka CI
+
+on:
+  push:
+    branches: ['*']
+  pull_request:
+    branches: ['*']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code 🏃
+        uses: actions/checkout@v2
+
+      - name: Setup up Node.js 📥
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.14.0'
+
+      - name: Install dependencies 🔧
+        run: npm install
+
+      - name: Run linting 🔍
+        run: npm run lint
+
+      - name: Build 🧱
+        run: npm run build

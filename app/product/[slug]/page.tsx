@@ -25,11 +25,9 @@ async function getData(slug: string) {
 
 export const dynamic = 'force-dynamic'
 
-export default async function ProductPge({
-	params,
-}: {
-	params: { slug: string }
-}) {
+export type paramsType = Promise<{ slug: string }>
+
+export default async function ProductPge({ params }: { params: paramsType }) {
 	const { slug } = await params
 	const data: fullProduct = await getData(slug)
 
