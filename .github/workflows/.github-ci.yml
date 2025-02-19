@@ -19,11 +19,19 @@ jobs:
         with:
           node-version: '22.14.0'
 
-      - name: Install dependencies 🔧
+      - name: Install Sanity dependencies 🔧
+        working-directory: ./sanity
         run: npm install
 
-      - name: Run linting 🔍
+      - name: Build Sanity project 🧱
+        working-directory: ./sanity
+        run: npm run build
+
+      - name: Install Next.js dependencies 🔧
+        run: npm install
+
+      - name: Run linting for Next.js 🔍
         run: npm run lint
 
-      - name: Build 🧱
+      - name: Build Next.js project 🧱
         run: npm run build
