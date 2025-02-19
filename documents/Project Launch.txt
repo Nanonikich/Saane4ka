@@ -1,0 +1,10 @@
+1. В файл .env вставить ключ от Stripe. 
+Его можно взять на сайте: https://dashboard.stripe.com/test/workbench/overview
+в разделе Publishable key
+
+1. Из терминала 1 запустить CMS sanity:
+cd sanity
+nmp run dev
+
+2. Из терминала 2 запустить Next.js:
+nmp run dev

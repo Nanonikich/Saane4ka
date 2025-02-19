@@ -1,0 +1,7 @@
+1. Информация о проектах Sanity: https://www.sanity.io/manage/personal/projects
+
+2. Запросы Sanity: http://localhost:3333/vision
+
+3. Чтобы проходила оплата через корзину на сайте, необходимо добавить товары из Sanity на
+ https://dashboard.stripe.com/test/products?active=true и здесь сгенерируется ключ у товара.
+Добавить ключ на Sanity.
