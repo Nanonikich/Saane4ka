@@ -7,8 +7,6 @@
 - Stripe 17.6.0
 - Tailwind CSS 3.4.1
 
-<details><summary>Работа сайта</summary>
+## Скриншоты сайта
 
-![alt text](documents/process.mp4 'Работа сайта')
-
-</details>
+--
